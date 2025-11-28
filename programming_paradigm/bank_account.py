@@ -17,12 +17,8 @@ class BankAccount:
         return False
 
     def display_balance(self):
-        return self.balance
+         return f"The current balance is: {self.balance}"
     
-    def current_balance(self):
-        return f"The current balance is: {self.balance}"
-    
-
     def get_account_info(self):
         return {
             "account_number": self.account_number,
