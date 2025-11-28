@@ -27,5 +27,13 @@ class BankAccount:
         }
 
 account = BankAccount("001", "Gideon", 100)
-account.deposit(50)
-account.display_balance()
+k = account.deposit(50)
+
+print(k)  # Should print True
+
+
+m= account.withdraw(40)
+print(m)  # Should print True
+j= account.display_balance()
+print(j)  # Should print Current Balance: $110
+
