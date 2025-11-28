@@ -16,8 +16,12 @@ class BankAccount:
             return True
         return False
 
-    def get_balance(self):
+    def display_balance(self):
         return self.balance
+    
+    def current_balance(self):
+        return f"The current balance is: {self.balance}"
+    
 
     def get_account_info(self):
         return {
@@ -30,5 +34,5 @@ BankAccount1 = BankAccount("123456789", "Gideon Osei", 500)
 k= BankAccount1.deposit(200) 
 print(k)
 
-m= BankAccount1.get_balance()
+m= BankAccount1.display_balance()
 print(m)
