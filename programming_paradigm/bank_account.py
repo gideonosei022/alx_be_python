@@ -25,3 +25,10 @@ class BankAccount:
             "account_holder": self.account_holder,
             "balance": self.balance
         }
+
+BankAccount1 = BankAccount("123456789", "Gideon Osei", 500)
+k= BankAccount1.deposit(200) 
+print(k)
+
+m= BankAccount1.get_balance()
+print(m)
