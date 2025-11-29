@@ -11,7 +11,7 @@ def safe_divide(numerator, denominator):
         return numerator / denominator
 
     except ValueError:
-        return "Invalid input. Please enter numeric values."
+        return "Error: Please enter numeric values only."
 
 
 m = safe_divide(10, 2)
