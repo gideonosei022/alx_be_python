@@ -6,7 +6,7 @@ def safe_divide(numerator, denominator):
         denominator = float(denominator)
 
         if denominator == 0:
-            return ZeroDivisionError
+            return "Error: Cannot divide by zero."
 
         return numerator / denominator
 
@@ -14,10 +14,6 @@ def safe_divide(numerator, denominator):
         return "Invalid input. Please enter numeric values."
 
 
-# Inputs remain as raw strings
-numerator = input("Enter the numerator: ")
-denominator = input("Enter the denominator: ")
+m = safe_divide(10, 2)
+print(m)  # Expected output: 5.0
 
-result = safe_divide(numerator, denominator)
-
-print(result)
