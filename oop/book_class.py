@@ -13,4 +13,10 @@ class Book:
 
     # Official representation
     def __repr__(self):
-        return f"Book('{self.title}', '{self.author}', {self.year})"
+        return f"Book('{self.title}', '{self.author}', '{self.publication_year}')"
+    
+
+
+book= Book("1984", "George Orwell", 1949)
+
+print(book)  # Uses __str__
